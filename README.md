@@ -6,7 +6,4 @@ A CLI tool to automate google dorking
 python DorkHound.py target.com
 ```
 The output is automatically saved to "dork_results.md"
-I recommend the Obsidian note taking app for viewing the results
-
-you can download it from their official website:
-https://obsidian.md/download
+I recommend the [Obsidian](https://obsidian.md/download) note taking app for viewing the results
