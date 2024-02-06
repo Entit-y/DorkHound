@@ -1,6 +1,8 @@
 # DorkHound
 DorkHound is a Python script designed to facilitate Google dorking—a technique used by security professionals and enthusiasts to discover sensitive information exposed on websites. By leveraging predefined search queries (dorks), DorkHound helps users uncover potential vulnerabilities, configuration issues, and other valuable insights within target domains. With DorkHound, users can automate the process of reconnaissance and information gathering, enabling them to enhance their security assessments and investigations efficiently.
 
+![DorkHound](<DorkHound Banner.png>)
+
 ## Installation:
 1. Clone this repo:
 ```bash
