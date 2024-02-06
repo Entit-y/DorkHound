@@ -55,8 +55,16 @@ def google_dorking(website, dorks):
                 print(Fore.GREEN + f"Found {len(results[dork])} results.")
                 time.sleep(2)  # Introduce a delay of 2 seconds between requests
             except Exception as e:
-                print(Fore.RED + f"An error occurred with dork '{dork}': {e}")
-        time.sleep(10)  # Introduce a delay between batches of dorks
+                if "HTTP Error 429" in str(e):
+                    print("Too Many Requests. Pausing for 120 seconds...")
+                    time.sleep(120)
+                elif "WinError 10060" in str(e):
+                    print("No Response From Google's Server...")
+                    print("Pausing for 20 seconds...")
+                    time.sleep(20)
+                    print("Resuming...")
+                else:
+                    print(f"An error occurred with dork '{dork}': {e}")
     print(Fore.GREEN + "Google dorking completed.")
     return results
 
@@ -90,7 +98,6 @@ if __name__ == "__main__":
     print(Fore.MAGENTA + "Starting Google dorking process...")
     results = google_dorking(website, dorks)
     save_results_to_md(results, dorks)  # Pass the 'dorks' dictionary as well
-
 
 
 
