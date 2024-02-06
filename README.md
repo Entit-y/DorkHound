@@ -6,7 +6,7 @@ DorkHound is a Python script designed to facilitate Google dorking—a technique
 ## Installation:
 1. Clone this repo:
 ```bash
-https://github.com/Entit-y/DorkHound
+git clone https://github.com/Entit-y/DorkHound.git
 ```
 2. Change your directory into the cloned repo
 ```bash
