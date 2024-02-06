@@ -1,22 +1,24 @@
 {
-  "Filetype Dorks": {
-      "filetype:pdf": "Searches for PDF files.",
-      "filetype:log": "Searches for log files.",
-      "filetype:sql": "Searches for SQL database files."
-  },
-  "Path Dorks": {
-      "inurl:admin": "Searches for URLs containing 'admin'.",
-      "inurl:login": "Searches for URLs containing 'login'.",
-      "inurl:wp-content": "Searches for WordPress content directories."
-  },
-  "Sensitive Information Dorks": {
-      "intitle:index.of": "Searches for directory listing pages.",
-      "intext:password": "Searches for pages containing the word 'password'.",
-      "intitle:\"index of\" .git": "Searches for Git directories."
-  },
-  "Vulnerability Dorks": {
-    "ext:php": "Searches for .php files",
-    "intitle:phpinfo()": "Searches for PHPInfo pages on a specific website.",
-    "inurl:.php?id=": "Searches for PHP pages with a parameter named 'id'."
-  }
+    "Filetype Dorks": {
+        "filetype:pdf": "Searches for PDF files.",
+        "filetype:log": "Searches for log files.",
+        "filetype:sql": "Searches for SQL database files.",
+        "Filetype:config": "Searches for config files",
+        "Filetype:pem private key": "Searches for private keys"
+    },
+    "Path Dorks": {
+        "inurl:admin": "Searches for URLs containing 'admin'.",
+        "inurl:login": "Searches for URLs containing 'login'.",
+        "inurl:wp-content": "Searches for WordPress content directories."
+    },
+    "Sensitive Information Dorks": {
+        "intitle:index.of": "Searches for directory listing pages.",
+        "intext:password": "Searches for pages containing the word 'password'.",
+        "intitle:\"index of\" .git": "Searches for Git directories."
+    },
+    "Vulnerability Dorks": {
+        "ext:php": "Searches for .php files",
+        "intitle:phpinfo()": "Searches for PHPInfo pages on a specific website.",
+        "inurl:.php?id=": "Searches for PHP pages with a parameter named 'id'."
+    }
 }
