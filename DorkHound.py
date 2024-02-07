@@ -51,13 +51,15 @@ def google_dorking(website, dorks):
             print(Fore.MAGENTA + f"Searching for: {dork} - {Fore.RED}{description}")
             query = f"site:{website} {dork}"
             try:
-                results[dork] = list(search(query, stop=5))
+                results[dork] = list(search(query, stop=10))
                 print(Fore.GREEN + f"Found {len(results[dork])} results.")
-                time.sleep(2)  # Introduce a delay of 2 seconds between requests
+                time.sleep(5)  # Introduce a delay of 5 seconds between requests
             except Exception as e:
                 if "HTTP Error 429" in str(e):
                     print("Too Many Requests. Pausing for 120 seconds...")
-                    time.sleep(120)
+                    print("Google is blocking our requests...")
+                    print("Scan will wait for at least 6 minutes before resuming...")
+                    time.sleep(360)
                 elif "WinError 10060" in str(e):
                     print("No Response From Google's Server...")
                     print("Pausing for 20 seconds...")
