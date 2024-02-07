@@ -56,7 +56,7 @@ def google_dorking(website, dorks):
                 time.sleep(5)  # Introduce a delay of 5 seconds between requests
             except Exception as e:
                 if "HTTP Error 429" in str(e):
-                    print("Too Many Requests. Pausing for 120 seconds...")
+                    print("Too Many Requests.")
                     print("Google is blocking our requests...")
                     print("Scan will wait for at least 6 minutes before resuming...")
                     time.sleep(360)
