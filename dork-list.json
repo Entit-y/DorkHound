@@ -1,12 +1,12 @@
 {
     "Filetype Dorks": {
-        "filetype:pdf": "Searches for PDF files.",
-        "filetype:log": "Searches for log files.",
-        "filetype:sql": "Searches for SQL database files.",
-        "Filetype:config": "Searches for config files",
+        "filetype:.pdf": "Searches for PDF files.",
+        "filetype:.log": "Searches for log files.",
+        "filetype:.sql": "Searches for SQL database files.",
+        "Filetype:.config": "Searches for config files",
         "Filetype:pem private key": "Searches for private keys",
-        "Filetype:xls": "Searches for xls files",
-        "Filetype:doc": "Searches for doc files"
+        "Filetype:.xls": "Searches for xls files",
+        "Filetype:.doc": "Searches for doc files"
     },
     "Path Dorks": {
         "inurl:admin": "Searches for URLs containing 'admin'.",
